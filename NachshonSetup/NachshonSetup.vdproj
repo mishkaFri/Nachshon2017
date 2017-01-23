@@ -3,7 +3,7 @@
 "VSVersion" = "3:800"
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
-"ProjectName" = "8:SysthemaSetup"
+"ProjectName" = "8:NachshonSetup"
 "LanguageId" = "3:1033"
 "CodePage" = "3:1252"
 "UILanguageId" = "3:1033"
@@ -1231,7 +1231,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Ksoft - Nachshon Kitchen Constructor"
         "ProductCode" = "8:{68F4C818-5C22-4F0E-8FB8-E2521E3C0BA0}"
-        "PackageCode" = "8:{9329F91E-E691-4FA1-8DE7-262BDCD233DC}"
+        "PackageCode" = "8:{594AD542-4673-4AA5-8D9C-4D0C6C21F5F5}"
         "UpgradeCode" = "8:{37ADFFF3-7653-44FD-94C9-FD81B6B24782}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -1956,7 +1956,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_48592FF3502F4513A5F3CDB8877D2AE5"
             {
-            "SourcePath" = "8:..\\Nachshon\\obj\\Debug\\Nachshon.dll"
+            "SourcePath" = "8:..\\Nachshon\\obj\\Release\\Nachshon.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_EA699FC0891F4E2FBE420C62C6D67612"
