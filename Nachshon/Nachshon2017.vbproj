@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD2407E5-DCF1-42FD-B454-3B06DCD21D22}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>Nachshon</RootNamespace>
+    <AssemblyName>Nachshon</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Nachshon.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Nachshon.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AcCoreMgd">
+      <HintPath>C:\Autodesk\Autodesk_ObjectARX_2014_Win_64_and_32Bit\inc\AcCoreMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="AcDbMgd">
+      <HintPath>C:\Autodesk\Autodesk_ObjectARX_2014_Win_64_and_32Bit\inc\AcDbMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="AcMgd">
+      <HintPath>C:\Autodesk\Autodesk_ObjectARX_2014_Win_64_and_32Bit\inc\AcMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Autodesk.AutoCAD.Interop, Version=18.1.0.0, Culture=neutral, PublicKeyToken=eed84259d7cbf30b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2014\Autodesk.AutoCAD.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.AutoCAD.Interop.Common, Version=18.1.0.0, Culture=neutral, PublicKeyToken=eed84259d7cbf30b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2014\Autodesk.AutoCAD.Interop.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationCore.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Presentation, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttributeTlb.Designer.vb">
+      <DependentUpon>AttributeTlb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AttributeTlb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\AttribTemplateAll.vb" />
+    <Compile Include="Class\AttribTemplateOne.vb" />
+    <Compile Include="Class\BlockAttribOne.vb" />
+    <Compile Include="Class\BlockAttSet.vb" />
+    <Compile Include="Class\BlockJig.vb" />
+    <Compile Include="Class\BlockLib.vb" />
+    <Compile Include="Class\BlockLibs.vb" />
+    <Compile Include="Class\BlockRefAll.vb" />
+    <Compile Include="Class\BlockRefOne.vb" />
+    <Compile Include="Class\BMath.vb" />
+    <Compile Include="Class\CrtTblManager.vb" />
+    <Compile Include="Class\CrtwrdManager.vb" />
+    <Compile Include="Class\DbConn.vb" />
+    <Compile Include="Class\ExcelManager.vb" />
+    <Compile Include="Class\Group.vb" />
+    <Compile Include="Class\KitchOne.vb" />
+    <Compile Include="Class\MathKsoft.vb" />
+    <Compile Include="Class\ProjOne.vb" />
+    <Compile Include="Class\SrvFunc.vb" />
+    <Compile Include="BlockTbl.Designer.vb">
+      <DependentUpon>BlockTbl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BlockTbl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\ClsAttWork.vb">
+    </Compile>
+    <Compile Include="Class\SrvObjectARX.vb" />
+    <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modul\GlbData.vb" />
+    <Compile Include="Modul\GlbEnum.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="User Control\UC_BomList.Designer.vb">
+      <DependentUpon>UC_BomList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_BomList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_Groups.Designer.vb">
+      <DependentUpon>UC_Groups.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_Groups.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_Parameters.Designer.vb">
+      <DependentUpon>UC_Parameters.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_Parameters.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UCmain.Designer.vb">
+      <DependentUpon>UCmain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UCmain.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_Information.Designer.vb">
+      <DependentUpon>UC_Information.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_Information.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_InsertBlock.Designer.vb">
+      <DependentUpon>UC_InsertBlock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_InsertBlock.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_NewKitchen.Designer.vb">
+      <DependentUpon>UC_NewKitchen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_NewKitchen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_OpenKitchen_2.Designer.vb">
+      <DependentUpon>UC_OpenKitchen_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_OpenKitchen_2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_OpenProject.Designer.vb">
+      <DependentUpon>UC_OpenProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_OpenProject.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_Setting.Designer.vb">
+      <DependentUpon>UC_Setting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_Setting.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_NewProject.Designer.vb">
+      <DependentUpon>UC_NewProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_NewProject.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_AddKitch.Designer.vb">
+      <DependentUpon>UC_AddKitch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_AddKitch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_Numering.Designer.vb">
+      <DependentUpon>UC_Numering.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_Numering.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_Attributes_2.Designer.vb">
+      <DependentUpon>UC_Attributes_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_Attributes_2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AttributeTlb.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AttributeTlb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlockTbl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BlockTbl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_BomList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_BomList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_Groups.resx">
+      <DependentUpon>UC_Groups.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_Parameters.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_Parameters.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UCmain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCmain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_Information.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_Information.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_InsertBlock.resx">
+      <DependentUpon>UC_InsertBlock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_NewKitchen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_NewKitchen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_NewProject.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_NewProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_OpenKitchen_2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_OpenKitchen_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_OpenProject.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_OpenProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_Setting.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_Setting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_AddKitch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_AddKitch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_Numering.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_Numering.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_Attributes_2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_Attributes_2.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\acgsConfigRes_512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\back.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\OPEN.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\CUT.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\SetDir.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Plus2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\OPENFOLD.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\cur.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\changeView.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\EditDb.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\SelectOne.BMP" />
+    <None Include="Icons\bom.BMP" />
+    <Content Include="Pictures\iconBOM.ico" />
+    <Content Include="Pictures\iconExport.ico" />
+    <Content Include="Pictures\iconNew.ico" />
+    <Content Include="Pictures\nero_1153.ico" />
+    <Content Include="Pictures\Oce9Res_121.ico" />
+    <None Include="Resources\ReadOnly.png" />
+    <None Include="Resources\Conv2D3D.jpg" />
+    <None Include="Pictures\TwoDocs.jpg" />
+    <None Include="Pictures\Tender.bmp" />
+    <None Include="Resources\nero_1153.ico" />
+    <None Include="Pictures\updateAttributes.BMP" />
+    <None Include="Pictures\SelectAll.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
