@@ -8,10 +8,10 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Systhema")> 
-<Assembly: AssemblyDescription("Systhema Acad Developer")> 
+<Assembly: AssemblyTitle("Nachshon")> 
+<Assembly: AssemblyDescription("Nachshon Acad Developer")> 
 <Assembly: AssemblyCompany("Ksoft")> 
-<Assembly: AssemblyProduct("Systhema")> 
+<Assembly: AssemblyProduct("Nachshon")> 
 <Assembly: AssemblyCopyright("Copyright ©  2009")> 
 <Assembly: AssemblyTrademark("Ksoft")> 
 

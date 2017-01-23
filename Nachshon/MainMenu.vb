@@ -7,7 +7,7 @@ Imports Autodesk.AutoCAD.Interop.Common
 Imports Autodesk.AutoCAD.Interop.Common.ACAD_COLOR
 Imports Autodesk.AutoCAD.ApplicationServices
 
-Public Class Systhema
+Public Class Nachshon
     Implements Autodesk.AutoCAD.Runtime.IExtensionApplication
     'Private UC_List As System.Collections.Generic.Dictionary(Of String, UserControl)
 
@@ -20,10 +20,10 @@ Public Class Systhema
         End Try
 
         'MsgBox("UCmain constract")
-        Dim ps As New Autodesk.AutoCAD.Windows.PaletteSet("Systhema")
+        Dim ps As New Autodesk.AutoCAD.Windows.PaletteSet("Nachshon")
         'MsgBox("UCmain add 2 pallete")
         ps.Size = New System.Drawing.Size(im.Size.Width + 25, im.Size.Height + 5)
-        ps.Add("Systhema", im)
+        ps.Add("Nachshon", im)
         'MsgBox(" add  2 pallete")
         ps.Visible = True
         'MsgBox("ShowBox")
@@ -80,7 +80,7 @@ Public Class Systhema
     '    Next
     'End Sub
 
-    'Private Sub Systhema_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+    'Private Sub Nachshon_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
     '    Me.UC_List.Add("UC_Setting", New UC_Setting())
     '    Me.UC_List.Add("UC_NewProject", New UC_NewProject())
     '    Me.UC_List.Add("UC_OpenProject", New UC_OpenProject())

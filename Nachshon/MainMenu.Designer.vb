@@ -1,5 +1,5 @@
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Systhema
+Partial Class Nachshon
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -21,15 +21,15 @@ Partial Class Systhema
     Private Sub InitializeComponent()
         Me.SuspendLayout()
         '
-        'Systhema
+        'Nachshon
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange
         Me.ClientSize = New System.Drawing.Size(238, 303)
         Me.IsMdiContainer = True
-        Me.Name = "Systhema"
-        Me.Text = "Systhema"
+        Me.Name = "Nachshon"
+        Me.Text = "Nachshon"
         Me.ResumeLayout(False)
 
     End Sub

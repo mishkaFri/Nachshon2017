@@ -75,7 +75,7 @@ Public Class BlockRefAll
             ent = tr.GetObject(id, OpenMode.ForRead)
             If ent IsNot Nothing AndAlso TypeOf ent Is BlockReference Then
                 CurBlockRef = CType(ent, BlockReference)
-                ' Don't count in blocks that doesen't have attributes (not 'Systhema' blocks)
+                ' Don't count in blocks that doesen't have attributes (not 'Nachshon' blocks)
                 If CurBlockRef.AttributeCollection.Count = 0 Then
                     Continue For
                 End If

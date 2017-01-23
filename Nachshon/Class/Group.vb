@@ -84,7 +84,7 @@ Public Class Group
         Dim GrpAto As New AttribTemplateOne
         GrpAto.Tag = "AppGrpNum"
         GrpAto.AttValue = Me.GroupNum
-        'GrpAto.Description = "Systhema Application Group Number"
+        'GrpAto.Description = "Nachshon Application Group Number"
         'GrpAto.ShowInTbl = False
         'GrpAto.ShowInTender = False
 

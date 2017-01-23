@@ -41,7 +41,7 @@ Public Class UC_NewKitchen
             Exit Sub
         End If
 
-        Dim path2Temp As String = GlbData.GlbSrvFunc.AddSlash2Path(My.Settings.Path2Temp) & "Systhema.dwt"
+        Dim path2Temp As String = GlbData.GlbSrvFunc.AddSlash2Path(My.Settings.Path2Temp) & "Nachshon.dwt"
         If System.IO.File.Exists(path2Temp) Then
             GlbData.GlbActDoc = GlbData.GlbAcadApp.Documents.Add(path2Temp)
         Else

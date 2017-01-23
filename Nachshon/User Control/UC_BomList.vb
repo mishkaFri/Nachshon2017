@@ -147,7 +147,7 @@ Public Class UC_BomList
     End Sub
 
     Public Sub FillCurrCmb() 'SZ
-        ' Fill Currency ComboBox from Main (SysthemaDB) database.
+        ' Fill Currency ComboBox from Main (NachshonDB) database.
         Dim Rec As String
         Me.CmbCurr.Items.Clear()
         Dim conn As New DBConn

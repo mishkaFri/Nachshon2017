@@ -5,13 +5,13 @@
     <Setting Name="Path2DB" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\Nachshon\CAD System\NachshonDB\Nachshon.mdb</Value>
     </Setting>
-    <Setting Name="SysthemaConnectionString" Type="(Connection string)" Scope="Application">
+    <Setting Name="NachshonConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\SysthemaDB\Systhema.mdb;Persist Security Info=True&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\NachshonDB\Nachshon.mdb;Persist Security Info=True&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\SysthemaDB\Systhema.mdb;Persist Security Info=True</Value>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\NachshonDB\Nachshon.mdb;Persist Security Info=True</Value>
     </Setting>
     <Setting Name="Path2Project" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\Nachshon</Value>

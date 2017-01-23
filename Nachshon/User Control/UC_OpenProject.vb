@@ -20,7 +20,7 @@ Public Class UC_OpenProject
             GlbData.GlbSrvFunc.AddSlash2Path(pathTmp)
             pathTmp = pathTmp & "ProjHead.txt"
             If System.IO.File.Exists(pathTmp) = False Then
-                MsgBox("Folder: " & Me.txtPath2Folder.Text & " isNot Systhema Project")
+                MsgBox("Folder: " & Me.txtPath2Folder.Text & " isNot Nachshon Project")
                 Exit Sub
             End If
 

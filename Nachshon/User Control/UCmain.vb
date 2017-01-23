@@ -249,7 +249,7 @@ Public Class UCmain
 
         'Check is Header File Existed
         If System.IO.File.Exists(Path2Folder & "ProjHead.txt") = False Then
-            MsgBox("Active Document is not a valid Systhema Kitchen")
+            MsgBox("Active Document is not a valid Nachshon Kitchen")
             Exit Sub
         End If
 

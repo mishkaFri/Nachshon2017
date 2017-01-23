@@ -238,7 +238,7 @@ Public Class AttributeTlb
         MyCaw.SetAcadAtts()
         Me.MyCaw.SetMyAtts()
         Me.MyCaw.AttTemplateAll.addAta(Me.MyCaw.NewAttTemplateAll)
-        'Application.DocumentManager.MdiActiveDocument.Editor.WriteMessage(vbCr & "Systhema Saved!!!" & vbCr)
+        'Application.DocumentManager.MdiActiveDocument.Editor.WriteMessage(vbCr & "Nachshon Saved!!!" & vbCr)
         GlbData.GlbActDoc.Save()
         Me.Change = False
     End Sub
