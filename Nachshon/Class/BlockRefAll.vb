@@ -26,7 +26,7 @@ Public Class BlockRefAll
         Dim bt As BlockTable = trans.GetObject(Db.BlockTableId, OpenMode.ForRead)
         Dim btr As BlockTableRecord = trans.GetObject(bt.Item(BlockTableRecord.ModelSpace), OpenMode.ForWrite)
 
-
+        trans.Commit()
         trans.Dispose()
     End Function
 
@@ -92,7 +92,7 @@ Public Class BlockRefAll
                 Me.BlockList.Add(MyBlockOne)
             End If
         Next
-
+        tr.Commit()
         tr.Dispose()
         tm.Dispose()
         If BlockList Is Nothing Then

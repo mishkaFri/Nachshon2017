@@ -244,7 +244,7 @@ Public Class SrvFunc
             If grp.GrpName Is Nothing Then
                 Continue For
             End If
-            If Name.Contains(grp.GrpName) Then
+            If Name.Equals(grp.GrpName) Then
                 Return grp
             End If
         Next

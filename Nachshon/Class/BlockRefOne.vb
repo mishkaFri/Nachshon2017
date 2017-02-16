@@ -33,6 +33,7 @@ Public Class BlockRefOne
         Dim AttRef As AttributeReference
         AttrColl = Me.BlockObj.AttributeCollection()
         If AttrColl Is Nothing Then
+            tr.Commit()
             tr.Dispose()
 
             Return (False)
@@ -65,6 +66,7 @@ Public Class BlockRefOne
             Me.BlockAttrib.AttrList.Add(New AttribTemplateOne(ato))
         Next
 
+        tr.Commit()
         tr.Dispose()
 
         Return (True)
@@ -81,6 +83,7 @@ Public Class BlockRefOne
             End If
             Alist.Add(ato)
         Next
+        tr.Commit()
         tr.Dispose()
         Return Alist
     End Function
@@ -165,6 +168,7 @@ Public Class BlockRefOne
         Dim AttRef As AttributeReference
         AttrColl = Me.BlockObj.AttributeCollection()
         If AttrColl Is Nothing Then
+            tr.Commit()
             tr.Dispose()
             Return (False)
         End If
@@ -197,7 +201,7 @@ Public Class BlockRefOne
 
             End If
         Next
-
+        tr.Commit()
         tr.Dispose()
 
 

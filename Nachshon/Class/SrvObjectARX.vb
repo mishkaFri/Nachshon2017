@@ -130,6 +130,7 @@ Public Class SrvObjectARX
         End If
 
         Block.Dispose()
+        tr.Commit()
         tr.Dispose()
         Return ret_name
     End Function
@@ -245,7 +246,7 @@ Public Class SrvObjectARX
                 Continue For
             End If
 
-            If Br.ObjectID = ent.ObjectId.GetHashCode Then
+            If Br.ObjectID = ent.ObjectId.OldId Then
                 Return Br
             End If
 
@@ -313,6 +314,7 @@ Public Class SrvObjectARX
             ' Check for 3D Parts
             If Not bt.Has(Bl3DTmpNameA) Then
                 If Not bt.Has(Bl3DTmpNameB) Then
+                    tr.Commit()
                     tr.Dispose()
                     Return Nothing
                 Else
@@ -408,7 +410,7 @@ Public Class SrvObjectARX
             If (Not btr.IsAnonymous And Not btr.IsLayout And (btr.Name = Ablock Or Tmp3DName = Ablock.Substring(0, 7))) Then
                 blockIds.Add(btrId)
                 Exit For
-            End If
+            End If           
             btr.Dispose()
         Next
         dm.MdiActiveDocument.LockDocument()
@@ -417,6 +419,7 @@ Public Class SrvObjectARX
         Catch ex As Exception
             Return False
         End Try
+        tr.Commit()
         tr.Dispose()
         Return True
     End Function
@@ -756,6 +759,7 @@ Public Class SrvObjectARX
                 End If
             Next ch
         End If
+        tr.Commit()
         tr.Dispose()
         Return FoundBlock
     End Function
@@ -1112,6 +1116,7 @@ Public Class SrvObjectARX
                 End If
             End If
         Next id
+        tr.Commit()
         tr.Dispose()
         Return BlockOnes
     End Function
@@ -1141,6 +1146,7 @@ Public Class SrvObjectARX
                 Polylist.Add(Foundpoly)
             End If
         Next id
+        tr.Commit()
         tr.Dispose()
         Return Polylist
     End Function
@@ -1233,7 +1239,7 @@ Public Class SrvObjectARX
 
             End If
         Next
-
+        tr.Commit()
         tr.Dispose()
         tm.Dispose()
 
