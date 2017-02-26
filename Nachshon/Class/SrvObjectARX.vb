@@ -245,10 +245,14 @@ Public Class SrvObjectARX
             And Not TypeOf Br Is AcadPolyline Then
                 Continue For
             End If
-
-            If Br.ObjectID = ent.ObjectId.OldId Then
-                Return Br
-            End If
+            Try
+                If Br.ObjectID = ent.ObjectId.OldId Then
+                    Return Br
+                End If
+            Catch ex As Exception
+                Continue For
+            End Try
+           
 
         Next
 

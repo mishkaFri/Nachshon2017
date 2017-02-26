@@ -709,7 +709,7 @@ Public Class CrtWrdManag
         Else
             IsArea = False
         End If
-        TmpName = "Docs\Tender\TenderTmptSon_" & Me.Lang & ".Doc"
+        TmpName = "Docs\Tender\TenderTmpt_new_" & Me.Lang & ".Doc"
         Dim data As IDataObject = Nothing
         Dim p2Form As String = GlbData.GlbSrvFunc.AddSlash2Path(My.Settings.Path2Temp) & TmpName
         Dim Fdoc As Microsoft.Office.Interop.Word.Document = WordApp.Documents.Open(p2Form)
