@@ -361,6 +361,17 @@ Public Class CrtWrdManag
             noSteam = False
         End If
 
+        Dim tbl As Table
+        tbl = Fdoc.Tables.Item(Fdoc.Tables.Count)
+        tbl.Rows.Last.Cells.Delete()
+        tbl.Rows.Last.Cells.Delete()
+        tbl.Rows.Last.Cells.Delete()
+        If isArea Then
+            tbl.Rows.Item(GlbEnum.TndTlbRows.Size).Cells.Delete()
+        Else
+            tbl.Rows.Item(GlbEnum.TndTlbRows.Area).Cells.Delete()
+        End If
+
     End Sub
 
     Public Sub FillFieldsArea(ByVal Fdoc As Microsoft.Office.Interop.Word.Document, ByVal Bro As BlockRefOne, ByVal Qnt As Integer)
@@ -575,30 +586,27 @@ Public Class CrtWrdManag
 
         ' Temporary dont include supplies in Tender (asked by Itzik June 2011) 'SZ
         ' Cancel the following 3 lines in order to regain supply in tender
-        noSteam = True
-        noGas = True
-        noElec = True
-        '------------------------------------------------------------------------
-        If noSteam Then
-            tbl = Me.CurTenderDoc.Tables.Item(Me.CurTenderDoc.Tables.Count)
-            tbl.Rows.Item(GlbEnum.TndTlbRows.Steam).Delete()
-        End If
+        'noSteam = True
+        'noGas = True
+        'noElec = True
+        ''------------------------------------------------------------------------
+        'If noSteam And tbl.Rows.Count = 6 Then           
+        '    tbl.Rows.Last.Cells.Delete()
+        'End If
 
-        If noGas Then
-            tbl = Me.CurTenderDoc.Tables.Item(Me.CurTenderDoc.Tables.Count)
-            tbl.Rows.Item(GlbEnum.TndTlbRows.Gas).Delete()
-        End If
+        'If noGas And tbl.Rows.Count = 5 Then
+        '    tbl.Rows.Last.Cells.Delete()
+        'End If
 
-        If noElec Then
-            tbl = Me.CurTenderDoc.Tables.Item(Me.CurTenderDoc.Tables.Count)
-            tbl.Rows.Item(GlbEnum.TndTlbRows.Elec).Delete()
-        End If
+        'If noElec And tbl.Rows.Count = 4 Then
+        '    tbl.Rows.Last.Cells.Delete()
+        'End If
 
-        If IsArea Then
-            tbl.Rows.Item(GlbEnum.TndTlbRows.Size).Delete()
-        Else
-            tbl.Rows.Item(GlbEnum.TndTlbRows.Area).Delete()
-        End If
+        'If IsArea Then
+        '    tbl.Rows.Item(GlbEnum.TndTlbRows.Size).Cells.Delete()
+        'Else
+        '    tbl.Rows.Item(GlbEnum.TndTlbRows.Area).Cells.Delete()
+        'End If
 
 
         data = Nothing
@@ -709,7 +717,7 @@ Public Class CrtWrdManag
         Else
             IsArea = False
         End If
-        TmpName = "Docs\Tender\TenderTmpt_new_" & Me.Lang & ".Doc"
+        TmpName = "Docs\Tender\TenderTmptSon_" & Me.Lang & ".Doc"
         Dim data As IDataObject = Nothing
         Dim p2Form As String = GlbData.GlbSrvFunc.AddSlash2Path(My.Settings.Path2Temp) & TmpName
         Dim Fdoc As Microsoft.Office.Interop.Word.Document = WordApp.Documents.Open(p2Form)
@@ -739,30 +747,30 @@ Public Class CrtWrdManag
 
         ' Temporary dont include supplies in Tender (asked by Itzik June 2011) 'SZ
         ' Cancel the following 3 lines in order to regain supply in tender
-        noSteam = True
-        noGas = True
-        noElec = True
+        'noSteam = True
+        'noGas = True
+        'noElec = True
 
-        If noSteam Then
-            tbl = Me.CurTenderDoc.Tables.Item(Me.CurTenderDoc.Tables.Count)
-            tbl.Rows.Item(GlbEnum.TndTlbRows.Steam).Delete()
-        End If
+        'If noSteam Then
+        '    tbl = Me.CurTenderDoc.Tables.Item(Me.CurTenderDoc.Tables.Count)
+        '    tbl.Rows.Item(GlbEnum.TndTlbRows.Steam).Delete()
+        'End If
 
-        If noGas Then
-            tbl = Me.CurTenderDoc.Tables.Item(Me.CurTenderDoc.Tables.Count)
-            tbl.Rows.Item(GlbEnum.TndTlbRows.Gas).Delete()
-        End If
+        'If noGas Then
+        '    tbl = Me.CurTenderDoc.Tables.Item(Me.CurTenderDoc.Tables.Count)
+        '    tbl.Rows.Item(GlbEnum.TndTlbRows.Gas).Delete()
+        'End If
 
-        If noElec Then
-            tbl = Me.CurTenderDoc.Tables.Item(Me.CurTenderDoc.Tables.Count)
-            tbl.Rows.Item(GlbEnum.TndTlbRows.Elec).Delete()
-        End If
+        'If noElec Then
+        '    tbl = Me.CurTenderDoc.Tables.Item(Me.CurTenderDoc.Tables.Count)
+        '    tbl.Rows.Item(GlbEnum.TndTlbRows.Elec).Delete()
+        'End If
 
-        If IsArea Then
-            tbl.Rows.Item(GlbEnum.TndTlbRows.Size).Delete()
-        Else
-            tbl.Rows.Item(GlbEnum.TndTlbRows.Area).Delete()
-        End If
+        'If IsArea Then
+        '    tbl.Rows.Item(GlbEnum.TndTlbRows.Size).Delete()
+        'Else
+        '    tbl.Rows.Item(GlbEnum.TndTlbRows.Area).Delete()
+        'End If
 
 
         ' New paragraph needed
@@ -858,18 +866,27 @@ Public Class CrtWrdManag
             Me.CurTenderDoc.ActiveWindow.Selection.Font.Name = "Arial" ' SZ
             Me.CurTenderDoc.ActiveWindow.Selection.Font.Size = 11 ' SZ
         End If
+        Dim tblCount As Integer = 0
+
         For Each tbl As Table In Me.CurTenderDoc.Tables
-            tbl.Rows.AllowBreakAcrossPages = False
+            If tbl.Rows.Count = 0 Then Continue For
+            If tbl.Rows.AllowBreakAcrossPages = 0 Then
+                Continue For
+            End If
             tbl.PreferredWidth = WordApp.InchesToPoints(7)
             If Me.Lang = Language.Hebrew Then
                 'tbl.TableDirection = WdTableDirection.wdTableDirectionRtl  ' Determine the direction of the table (left->right or right->left)
             Else
-                tbl.Rows.Alignment = WdRowAlignment.wdAlignRowRight
-                tbl.Rows.LeftIndent = WordApp.InchesToPoints(0)
+                If tbl.Rows.Alignment <> WdRowAlignment.wdAlignRowRight Then
+                    tbl.Rows.Alignment = WdRowAlignment.wdAlignRowRight
+                End If
+                If tbl.Rows.LeftIndent <> WordApp.InchesToPoints(0) Then
+                    tbl.Rows.LeftIndent = WordApp.InchesToPoints(0)
+                End If
                 'tbl.Style = CurTenderDoc.Styles("Normal")
                 'tbl.TableDirection = WdTableDirection.wdTableDirectionLtr ' Canceled by SZ 10/6/2012
             End If
-
+            tblCount = tblCount + 1
         Next
         WordApp.ActiveDocument.FormFields.Shaded = False 'Disable Field gray shading
         Me.CurTenderDoc.ActiveWindow.ActivePane.View.Zoom.Percentage = 70

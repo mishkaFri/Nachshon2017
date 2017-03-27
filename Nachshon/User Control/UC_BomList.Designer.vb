@@ -204,7 +204,7 @@ Partial Class UC_BomList
         Me.ChkCeiling.Size = New System.Drawing.Size(33, 17)
         Me.ChkCeiling.TabIndex = 38
         Me.ChkCeiling.Text = "מ"
-        Me.ToolTip1.SetToolTip(Me.ChkCeiling, "תקרות מנדפות")
+        Me.ToolTip1.SetToolTip(Me.ChkCeiling, "ציוד הנדפה")
         Me.ChkCeiling.UseVisualStyleBackColor = True
         '
         'ChkWeight
@@ -276,7 +276,7 @@ Partial Class UC_BomList
         Me.ChkWash.Size = New System.Drawing.Size(33, 17)
         Me.ChkWash.TabIndex = 31
         Me.ChkWash.Text = "ה"
-        Me.ToolTip1.SetToolTip(Me.ChkWash, "מכונות הדחה")
+        Me.ToolTip1.SetToolTip(Me.ChkWash, "ציוד הדחה")
         Me.ChkWash.UseVisualStyleBackColor = True
         '
         'ChkCool

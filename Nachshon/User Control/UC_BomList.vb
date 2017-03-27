@@ -247,7 +247,7 @@ Public Class UC_BomList
             Lang = GlbEnum.Language.English
         End If
         SetProgBar(1) ' Reset Progress bar (On) 'SZ
-        Dim Cb As New CrtTblManager("BOM", "כללי", Me.CmbCurr.Text, Me.TxtExcngRate.Text, Me, Lang)
+        Dim Cb As New CrtTblManager("BOM", "ציוד מטבח לרכישה ולייצור מיוחד", Me.CmbCurr.Text, Me.TxtExcngRate.Text, Me, Lang)
         Cb.CreateBOM("All", "AllBlocks", Me.GrpExtended.Visible, Me.ChkPrice.Checked)
         Dim Cb1 As New CrtTblManager("BOM", "לא למכרז", Me.CmbCurr.Text, Me.TxtExcngRate.Text, Me, Lang)
         Cb1.CreateBOM("א", "NotIn", Me.GrpExtended.Visible, Me.ChkPrice.Checked)
