@@ -546,7 +546,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:2.0.50727 "
+                "FrameworkVersion" = "8:.NETFramework,Version=v4.5"
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=9832"
                 }
@@ -1231,7 +1231,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Ksoft - Nachshon Kitchen Constructor"
         "ProductCode" = "8:{68F4C818-5C22-4F0E-8FB8-E2521E3C0BA0}"
-        "PackageCode" = "8:{594AD542-4673-4AA5-8D9C-4D0C6C21F5F5}"
+        "PackageCode" = "8:{EF0EE3A1-4FC0-4D3C-B88D-710C26E9035F}"
         "UpgradeCode" = "8:{37ADFFF3-7653-44FD-94C9-FD81B6B24782}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

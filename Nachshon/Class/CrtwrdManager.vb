@@ -177,6 +177,7 @@ Public Class CrtWrdManag
     Public Sub FillFields(ByVal Fdoc As Microsoft.Office.Interop.Word.Document, ByVal Bro As BlockRefOne, ByVal Qnt As String, _
                           ByVal isSon As Boolean, ByRef noElec As Boolean, ByRef noGas As Boolean, ByRef noSteam As Boolean, _
                           ByVal isArea As Boolean)
+        Dim kQnt As Integer = 0
         Dim curIndx As Integer = 1
         Dim SSV As Integer = 1  ' (Son Shift Value) : When Son - shift all fields  counters by -1 
         Dim LaNgShVal As Integer = 0 ' Language Shift Value - used in order to swich Knum and KNAM 
@@ -215,6 +216,7 @@ Public Class CrtWrdManag
 
         Ato = Bro.GetBlkAttrByTag("KQNT")
         If Ato IsNot Nothing Then
+            kQnt = Ato.AttValue
             Fdoc.Fields.Item(GlbEnum.TndTlbFields.Qnt - SSV - LaNgShVal).Result.Text = Ato.AttValue
         End If
 
@@ -235,6 +237,9 @@ Public Class CrtWrdManag
                 'End If
                 ' For length block - set total length from BOM
                 Fdoc.Fields.Item(GlbEnum.TndTlbFields.Length - SSV).Result.Text = AttVal
+                If kQnt > 1 Then
+                    Fdoc.Fields.Item(GlbEnum.TndTlbFields.Qnt - SSV - LaNgShVal).Result.Text = IIf(LaNgShVal, "As Per Plan", "לפי תכנית")
+                End If
             Else
                 If Ato IsNot Nothing Then
                     AttVal = Ato.AttValue
@@ -527,7 +532,7 @@ Public Class CrtWrdManag
                         Me.AddAtt2Selection(AtoTnd, FirstAtt)
                     Next
 
-                    ata = bro.GetBlkAttsByPartTag("KC") ' Get all KCLD_x attributes (Cold compressors)
+                    ata = childBro.GetBlkAttsByPartTag("KC") ' Get all KCLD_x attributes (Cold compressors)
                     For Each AtoTnd In ata.AttrList
                         If AtoTnd.AttValue Is Nothing OrElse AtoTnd.AttValue = "" Then
                             Continue For

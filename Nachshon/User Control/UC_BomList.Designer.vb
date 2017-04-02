@@ -19,74 +19,74 @@ Partial Class UC_BomList
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UC_BomList))
-        Me.TabReports = New System.Windows.Forms.TabControl
-        Me.TpgBom = New System.Windows.Forms.TabPage
-        Me.Grp = New System.Windows.Forms.GroupBox
-        Me.GrpExtended = New System.Windows.Forms.GroupBox
-        Me.ChkCoolRoom = New System.Windows.Forms.CheckBox
-        Me.ChkShelf = New System.Windows.Forms.CheckBox
-        Me.ChkCeiling = New System.Windows.Forms.CheckBox
-        Me.ChkWeight = New System.Windows.Forms.CheckBox
-        Me.ChkBake = New System.Windows.Forms.CheckBox
-        Me.ChkSink = New System.Windows.Forms.CheckBox
-        Me.ChkCooking = New System.Windows.Forms.CheckBox
-        Me.ChkGarbage = New System.Windows.Forms.CheckBox
-        Me.ChkWash = New System.Windows.Forms.CheckBox
-        Me.ChkCool = New System.Windows.Forms.CheckBox
-        Me.ChkFixed = New System.Windows.Forms.CheckBox
-        Me.ChkProduction = New System.Windows.Forms.CheckBox
-        Me.ChkPurchase = New System.Windows.Forms.CheckBox
-        Me.ChkNotIn = New System.Windows.Forms.CheckBox
-        Me.RadHebBOM = New System.Windows.Forms.RadioButton
-        Me.TxtExcngRate = New System.Windows.Forms.TextBox
-        Me.CmbCurr = New System.Windows.Forms.ComboBox
-        Me.ChkPrice = New System.Windows.Forms.CheckBox
-        Me.BtnBomView = New System.Windows.Forms.Button
-        Me.RadEngBOM = New System.Windows.Forms.RadioButton
-        Me.BtnCrtBom = New System.Windows.Forms.Button
-        Me.BomBack = New System.Windows.Forms.Button
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.AllBlocksToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.AllBlocksToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem
-        Me.ByTenderToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.RegularToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExtendedToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.GrpBomView = New System.Windows.Forms.GroupBox
-        Me.BtnInsertBomXls = New System.Windows.Forms.Button
-        Me.BtnOpenBomXls = New System.Windows.Forms.Button
-        Me.LstBom = New System.Windows.Forms.ListBox
-        Me.TpgLists = New System.Windows.Forms.TabPage
-        Me.BtnListView = New System.Windows.Forms.Button
-        Me.RadListHeb = New System.Windows.Forms.RadioButton
-        Me.BtnCrtList = New System.Windows.Forms.Button
-        Me.radListEng = New System.Windows.Forms.RadioButton
-        Me.CmbListypes = New System.Windows.Forms.ComboBox
-        Me.btnCancel = New System.Windows.Forms.Button
-        Me.grpLstview = New System.Windows.Forms.GroupBox
-        Me.BtnInsertXL = New System.Windows.Forms.Button
-        Me.BtnOpenXls = New System.Windows.Forms.Button
-        Me.lstList = New System.Windows.Forms.ListBox
-        Me.TpgTender = New System.Windows.Forms.TabPage
-        Me.GrpTndBom = New System.Windows.Forms.GroupBox
-        Me.RadHebTnd = New System.Windows.Forms.RadioButton
-        Me.RadEngTnd = New System.Windows.Forms.RadioButton
-        Me.BtnCrtSelTnd = New System.Windows.Forms.Button
-        Me.BtnCloseTndBom = New System.Windows.Forms.Button
-        Me.BtnCrtAllTender = New System.Windows.Forms.Button
-        Me.LstTndBom = New System.Windows.Forms.ListBox
-        Me.GrpTndView = New System.Windows.Forms.GroupBox
-        Me.BtnTenderBack = New System.Windows.Forms.Button
-        Me.BtnCrtTndView = New System.Windows.Forms.Button
-        Me.BtnOpenTender = New System.Windows.Forms.Button
-        Me.LstTnd = New System.Windows.Forms.ListBox
-        Me.ProgBar = New System.Windows.Forms.ProgressBar
-        Me.BomTypeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.AllBlocksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ByTenderToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.RegularToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExtendedToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.TabReports = New System.Windows.Forms.TabControl()
+        Me.TpgBom = New System.Windows.Forms.TabPage()
+        Me.Grp = New System.Windows.Forms.GroupBox()
+        Me.GrpExtended = New System.Windows.Forms.GroupBox()
+        Me.ChkCoolRoom = New System.Windows.Forms.CheckBox()
+        Me.ChkShelf = New System.Windows.Forms.CheckBox()
+        Me.ChkCeiling = New System.Windows.Forms.CheckBox()
+        Me.ChkDoors = New System.Windows.Forms.CheckBox()
+        Me.ChkBake = New System.Windows.Forms.CheckBox()
+        Me.ChkSink = New System.Windows.Forms.CheckBox()
+        Me.ChkCooking = New System.Windows.Forms.CheckBox()
+        Me.ChkGarbage = New System.Windows.Forms.CheckBox()
+        Me.ChkWash = New System.Windows.Forms.CheckBox()
+        Me.ChkCool = New System.Windows.Forms.CheckBox()
+        Me.ChkFixed = New System.Windows.Forms.CheckBox()
+        Me.ChkProduction = New System.Windows.Forms.CheckBox()
+        Me.ChkPurchase = New System.Windows.Forms.CheckBox()
+        Me.ChkNotIn = New System.Windows.Forms.CheckBox()
+        Me.RadHebBOM = New System.Windows.Forms.RadioButton()
+        Me.TxtExcngRate = New System.Windows.Forms.TextBox()
+        Me.CmbCurr = New System.Windows.Forms.ComboBox()
+        Me.ChkPrice = New System.Windows.Forms.CheckBox()
+        Me.BtnBomView = New System.Windows.Forms.Button()
+        Me.RadEngBOM = New System.Windows.Forms.RadioButton()
+        Me.BtnCrtBom = New System.Windows.Forms.Button()
+        Me.BomBack = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.AllBlocksToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AllBlocksToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ByTenderToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RegularToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExtendedToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GrpBomView = New System.Windows.Forms.GroupBox()
+        Me.BtnInsertBomXls = New System.Windows.Forms.Button()
+        Me.BtnOpenBomXls = New System.Windows.Forms.Button()
+        Me.LstBom = New System.Windows.Forms.ListBox()
+        Me.TpgLists = New System.Windows.Forms.TabPage()
+        Me.BtnListView = New System.Windows.Forms.Button()
+        Me.RadListHeb = New System.Windows.Forms.RadioButton()
+        Me.BtnCrtList = New System.Windows.Forms.Button()
+        Me.radListEng = New System.Windows.Forms.RadioButton()
+        Me.CmbListypes = New System.Windows.Forms.ComboBox()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.grpLstview = New System.Windows.Forms.GroupBox()
+        Me.BtnInsertXL = New System.Windows.Forms.Button()
+        Me.BtnOpenXls = New System.Windows.Forms.Button()
+        Me.lstList = New System.Windows.Forms.ListBox()
+        Me.TpgTender = New System.Windows.Forms.TabPage()
+        Me.GrpTndBom = New System.Windows.Forms.GroupBox()
+        Me.RadHebTnd = New System.Windows.Forms.RadioButton()
+        Me.RadEngTnd = New System.Windows.Forms.RadioButton()
+        Me.BtnCrtSelTnd = New System.Windows.Forms.Button()
+        Me.BtnCloseTndBom = New System.Windows.Forms.Button()
+        Me.BtnCrtAllTender = New System.Windows.Forms.Button()
+        Me.LstTndBom = New System.Windows.Forms.ListBox()
+        Me.GrpTndView = New System.Windows.Forms.GroupBox()
+        Me.BtnTenderBack = New System.Windows.Forms.Button()
+        Me.BtnCrtTndView = New System.Windows.Forms.Button()
+        Me.BtnOpenTender = New System.Windows.Forms.Button()
+        Me.LstTnd = New System.Windows.Forms.ListBox()
+        Me.ProgBar = New System.Windows.Forms.ProgressBar()
+        Me.BomTypeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AllBlocksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ByTenderToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RegularToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExtendedToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.TabReports.SuspendLayout()
         Me.TpgBom.SuspendLayout()
@@ -107,7 +107,7 @@ Partial Class UC_BomList
         Me.TabReports.Controls.Add(Me.TpgLists)
         Me.TabReports.Controls.Add(Me.TpgTender)
         Me.TabReports.Location = New System.Drawing.Point(0, 0)
-        Me.TabReports.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabReports.Margin = New System.Windows.Forms.Padding(2)
         Me.TabReports.Name = "TabReports"
         Me.TabReports.SelectedIndex = 0
         Me.TabReports.Size = New System.Drawing.Size(143, 224)
@@ -127,9 +127,9 @@ Partial Class UC_BomList
         Me.TpgBom.Controls.Add(Me.MenuStrip1)
         Me.TpgBom.Controls.Add(Me.GrpBomView)
         Me.TpgBom.Location = New System.Drawing.Point(4, 22)
-        Me.TpgBom.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TpgBom.Margin = New System.Windows.Forms.Padding(2)
         Me.TpgBom.Name = "TpgBom"
-        Me.TpgBom.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TpgBom.Padding = New System.Windows.Forms.Padding(2)
         Me.TpgBom.Size = New System.Drawing.Size(135, 198)
         Me.TpgBom.TabIndex = 1
         Me.TpgBom.Text = "BOM"
@@ -144,9 +144,9 @@ Partial Class UC_BomList
         Me.Grp.Controls.Add(Me.ChkPurchase)
         Me.Grp.Controls.Add(Me.ChkNotIn)
         Me.Grp.Location = New System.Drawing.Point(2, 56)
-        Me.Grp.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Grp.Margin = New System.Windows.Forms.Padding(2)
         Me.Grp.Name = "Grp"
-        Me.Grp.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Grp.Padding = New System.Windows.Forms.Padding(2)
         Me.Grp.Size = New System.Drawing.Size(135, 90)
         Me.Grp.TabIndex = 29
         Me.Grp.TabStop = False
@@ -157,16 +157,16 @@ Partial Class UC_BomList
         Me.GrpExtended.Controls.Add(Me.ChkCoolRoom)
         Me.GrpExtended.Controls.Add(Me.ChkShelf)
         Me.GrpExtended.Controls.Add(Me.ChkCeiling)
-        Me.GrpExtended.Controls.Add(Me.ChkWeight)
+        Me.GrpExtended.Controls.Add(Me.ChkDoors)
         Me.GrpExtended.Controls.Add(Me.ChkBake)
         Me.GrpExtended.Controls.Add(Me.ChkSink)
         Me.GrpExtended.Controls.Add(Me.ChkCooking)
         Me.GrpExtended.Controls.Add(Me.ChkGarbage)
         Me.GrpExtended.Controls.Add(Me.ChkWash)
         Me.GrpExtended.Location = New System.Drawing.Point(0, 38)
-        Me.GrpExtended.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GrpExtended.Margin = New System.Windows.Forms.Padding(2)
         Me.GrpExtended.Name = "GrpExtended"
-        Me.GrpExtended.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GrpExtended.Padding = New System.Windows.Forms.Padding(2)
         Me.GrpExtended.Size = New System.Drawing.Size(135, 52)
         Me.GrpExtended.TabIndex = 35
         Me.GrpExtended.TabStop = False
@@ -175,7 +175,7 @@ Partial Class UC_BomList
         '
         Me.ChkCoolRoom.AutoSize = True
         Me.ChkCoolRoom.Location = New System.Drawing.Point(98, 30)
-        Me.ChkCoolRoom.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ChkCoolRoom.Margin = New System.Windows.Forms.Padding(2)
         Me.ChkCoolRoom.Name = "ChkCoolRoom"
         Me.ChkCoolRoom.Size = New System.Drawing.Size(33, 17)
         Me.ChkCoolRoom.TabIndex = 40
@@ -187,7 +187,7 @@ Partial Class UC_BomList
         '
         Me.ChkShelf.AutoSize = True
         Me.ChkShelf.Location = New System.Drawing.Point(28, 7)
-        Me.ChkShelf.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ChkShelf.Margin = New System.Windows.Forms.Padding(2)
         Me.ChkShelf.Name = "ChkShelf"
         Me.ChkShelf.Size = New System.Drawing.Size(33, 17)
         Me.ChkShelf.TabIndex = 39
@@ -199,7 +199,7 @@ Partial Class UC_BomList
         '
         Me.ChkCeiling.AutoSize = True
         Me.ChkCeiling.Location = New System.Drawing.Point(44, 30)
-        Me.ChkCeiling.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ChkCeiling.Margin = New System.Windows.Forms.Padding(2)
         Me.ChkCeiling.Name = "ChkCeiling"
         Me.ChkCeiling.Size = New System.Drawing.Size(33, 17)
         Me.ChkCeiling.TabIndex = 38
@@ -207,23 +207,23 @@ Partial Class UC_BomList
         Me.ToolTip1.SetToolTip(Me.ChkCeiling, "ציוד הנדפה")
         Me.ChkCeiling.UseVisualStyleBackColor = True
         '
-        'ChkWeight
+        'ChkDoors
         '
-        Me.ChkWeight.AutoSize = True
-        Me.ChkWeight.Location = New System.Drawing.Point(71, 30)
-        Me.ChkWeight.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.ChkWeight.Name = "ChkWeight"
-        Me.ChkWeight.Size = New System.Drawing.Size(33, 17)
-        Me.ChkWeight.TabIndex = 37
-        Me.ChkWeight.Text = "ס"
-        Me.ToolTip1.SetToolTip(Me.ChkWeight, "משקלים")
-        Me.ChkWeight.UseVisualStyleBackColor = True
+        Me.ChkDoors.AutoSize = True
+        Me.ChkDoors.Location = New System.Drawing.Point(71, 30)
+        Me.ChkDoors.Margin = New System.Windows.Forms.Padding(2)
+        Me.ChkDoors.Name = "ChkDoors"
+        Me.ChkDoors.Size = New System.Drawing.Size(33, 17)
+        Me.ChkDoors.TabIndex = 37
+        Me.ChkDoors.Text = "ס"
+        Me.ToolTip1.SetToolTip(Me.ChkDoors, "דלתות פנדל")
+        Me.ChkDoors.UseVisualStyleBackColor = True
         '
         'ChkBake
         '
         Me.ChkBake.AutoSize = True
         Me.ChkBake.Location = New System.Drawing.Point(16, 29)
-        Me.ChkBake.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ChkBake.Margin = New System.Windows.Forms.Padding(2)
         Me.ChkBake.Name = "ChkBake"
         Me.ChkBake.Size = New System.Drawing.Size(33, 17)
         Me.ChkBake.TabIndex = 36
@@ -235,7 +235,7 @@ Partial Class UC_BomList
         '
         Me.ChkSink.AutoSize = True
         Me.ChkSink.Location = New System.Drawing.Point(5, 7)
-        Me.ChkSink.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ChkSink.Margin = New System.Windows.Forms.Padding(2)
         Me.ChkSink.Name = "ChkSink"
         Me.ChkSink.Size = New System.Drawing.Size(31, 17)
         Me.ChkSink.TabIndex = 35
@@ -247,7 +247,7 @@ Partial Class UC_BomList
         '
         Me.ChkCooking.AutoSize = True
         Me.ChkCooking.Location = New System.Drawing.Point(79, 8)
-        Me.ChkCooking.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ChkCooking.Margin = New System.Windows.Forms.Padding(2)
         Me.ChkCooking.Name = "ChkCooking"
         Me.ChkCooking.Size = New System.Drawing.Size(33, 17)
         Me.ChkCooking.TabIndex = 33
@@ -259,7 +259,7 @@ Partial Class UC_BomList
         '
         Me.ChkGarbage.AutoSize = True
         Me.ChkGarbage.Location = New System.Drawing.Point(104, 8)
-        Me.ChkGarbage.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ChkGarbage.Margin = New System.Windows.Forms.Padding(2)
         Me.ChkGarbage.Name = "ChkGarbage"
         Me.ChkGarbage.Size = New System.Drawing.Size(32, 17)
         Me.ChkGarbage.TabIndex = 32
@@ -271,7 +271,7 @@ Partial Class UC_BomList
         '
         Me.ChkWash.AutoSize = True
         Me.ChkWash.Location = New System.Drawing.Point(52, 7)
-        Me.ChkWash.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ChkWash.Margin = New System.Windows.Forms.Padding(2)
         Me.ChkWash.Name = "ChkWash"
         Me.ChkWash.Size = New System.Drawing.Size(33, 17)
         Me.ChkWash.TabIndex = 31
@@ -283,7 +283,7 @@ Partial Class UC_BomList
         '
         Me.ChkCool.AutoSize = True
         Me.ChkCool.Location = New System.Drawing.Point(53, 15)
-        Me.ChkCool.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ChkCool.Margin = New System.Windows.Forms.Padding(2)
         Me.ChkCool.Name = "ChkCool"
         Me.ChkCool.Size = New System.Drawing.Size(33, 17)
         Me.ChkCool.TabIndex = 24
@@ -295,7 +295,7 @@ Partial Class UC_BomList
         '
         Me.ChkFixed.AutoSize = True
         Me.ChkFixed.Location = New System.Drawing.Point(104, 15)
-        Me.ChkFixed.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ChkFixed.Margin = New System.Windows.Forms.Padding(2)
         Me.ChkFixed.Name = "ChkFixed"
         Me.ChkFixed.Size = New System.Drawing.Size(33, 17)
         Me.ChkFixed.TabIndex = 22
@@ -307,7 +307,7 @@ Partial Class UC_BomList
         '
         Me.ChkProduction.AutoSize = True
         Me.ChkProduction.Location = New System.Drawing.Point(28, 15)
-        Me.ChkProduction.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ChkProduction.Margin = New System.Windows.Forms.Padding(2)
         Me.ChkProduction.Name = "ChkProduction"
         Me.ChkProduction.Size = New System.Drawing.Size(33, 17)
         Me.ChkProduction.TabIndex = 17
@@ -319,7 +319,7 @@ Partial Class UC_BomList
         '
         Me.ChkPurchase.AutoSize = True
         Me.ChkPurchase.Location = New System.Drawing.Point(79, 15)
-        Me.ChkPurchase.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ChkPurchase.Margin = New System.Windows.Forms.Padding(2)
         Me.ChkPurchase.Name = "ChkPurchase"
         Me.ChkPurchase.Size = New System.Drawing.Size(32, 17)
         Me.ChkPurchase.TabIndex = 23
@@ -331,7 +331,7 @@ Partial Class UC_BomList
         '
         Me.ChkNotIn.AutoSize = True
         Me.ChkNotIn.Location = New System.Drawing.Point(3, 15)
-        Me.ChkNotIn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ChkNotIn.Margin = New System.Windows.Forms.Padding(2)
         Me.ChkNotIn.Name = "ChkNotIn"
         Me.ChkNotIn.Size = New System.Drawing.Size(34, 17)
         Me.ChkNotIn.TabIndex = 34
@@ -344,7 +344,7 @@ Partial Class UC_BomList
         Me.RadHebBOM.AutoSize = True
         Me.RadHebBOM.Checked = True
         Me.RadHebBOM.Location = New System.Drawing.Point(71, 21)
-        Me.RadHebBOM.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadHebBOM.Margin = New System.Windows.Forms.Padding(2)
         Me.RadHebBOM.Name = "RadHebBOM"
         Me.RadHebBOM.Size = New System.Drawing.Size(62, 17)
         Me.RadHebBOM.TabIndex = 39
@@ -355,7 +355,7 @@ Partial Class UC_BomList
         'TxtExcngRate
         '
         Me.TxtExcngRate.Location = New System.Drawing.Point(43, 151)
-        Me.TxtExcngRate.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TxtExcngRate.Margin = New System.Windows.Forms.Padding(2)
         Me.TxtExcngRate.Name = "TxtExcngRate"
         Me.TxtExcngRate.Size = New System.Drawing.Size(48, 20)
         Me.TxtExcngRate.TabIndex = 38
@@ -364,7 +364,7 @@ Partial Class UC_BomList
         'CmbCurr
         '
         Me.CmbCurr.Location = New System.Drawing.Point(94, 151)
-        Me.CmbCurr.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CmbCurr.Margin = New System.Windows.Forms.Padding(2)
         Me.CmbCurr.Name = "CmbCurr"
         Me.CmbCurr.Size = New System.Drawing.Size(41, 21)
         Me.CmbCurr.TabIndex = 15
@@ -376,7 +376,7 @@ Partial Class UC_BomList
         Me.ChkPrice.BackColor = System.Drawing.Color.Transparent
         Me.ChkPrice.CheckAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.ChkPrice.Location = New System.Drawing.Point(5, 145)
-        Me.ChkPrice.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ChkPrice.Margin = New System.Windows.Forms.Padding(2)
         Me.ChkPrice.Name = "ChkPrice"
         Me.ChkPrice.Size = New System.Drawing.Size(35, 31)
         Me.ChkPrice.TabIndex = 27
@@ -388,7 +388,7 @@ Partial Class UC_BomList
         '
         Me.BtnBomView.Image = CType(resources.GetObject("BtnBomView.Image"), System.Drawing.Image)
         Me.BtnBomView.Location = New System.Drawing.Point(112, 176)
-        Me.BtnBomView.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnBomView.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnBomView.Name = "BtnBomView"
         Me.BtnBomView.Size = New System.Drawing.Size(23, 22)
         Me.BtnBomView.TabIndex = 37
@@ -399,7 +399,7 @@ Partial Class UC_BomList
         '
         Me.RadEngBOM.AutoSize = True
         Me.RadEngBOM.Location = New System.Drawing.Point(12, 21)
-        Me.RadEngBOM.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadEngBOM.Margin = New System.Windows.Forms.Padding(2)
         Me.RadEngBOM.Name = "RadEngBOM"
         Me.RadEngBOM.Size = New System.Drawing.Size(59, 17)
         Me.RadEngBOM.TabIndex = 40
@@ -410,7 +410,7 @@ Partial Class UC_BomList
         '
         Me.BtnCrtBom.Image = CType(resources.GetObject("BtnCrtBom.Image"), System.Drawing.Image)
         Me.BtnCrtBom.Location = New System.Drawing.Point(55, 175)
-        Me.BtnCrtBom.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnCrtBom.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnCrtBom.Name = "BtnCrtBom"
         Me.BtnCrtBom.Size = New System.Drawing.Size(24, 24)
         Me.BtnCrtBom.TabIndex = 33
@@ -421,7 +421,7 @@ Partial Class UC_BomList
         '
         Me.BomBack.Image = Global.Nachshon.My.Resources.Resources.back
         Me.BomBack.Location = New System.Drawing.Point(2, 176)
-        Me.BomBack.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BomBack.Margin = New System.Windows.Forms.Padding(2)
         Me.BomBack.Name = "BomBack"
         Me.BomBack.Size = New System.Drawing.Size(23, 22)
         Me.BomBack.TabIndex = 36
@@ -443,32 +443,32 @@ Partial Class UC_BomList
         '
         Me.AllBlocksToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AllBlocksToolStripMenuItem2, Me.ByTenderToolStripMenuItem1})
         Me.AllBlocksToolStripMenuItem1.Name = "AllBlocksToolStripMenuItem1"
-        Me.AllBlocksToolStripMenuItem1.Size = New System.Drawing.Size(84, 17)
+        Me.AllBlocksToolStripMenuItem1.Size = New System.Drawing.Size(69, 17)
         Me.AllBlocksToolStripMenuItem1.Text = "BomType"
         '
         'AllBlocksToolStripMenuItem2
         '
         Me.AllBlocksToolStripMenuItem2.Name = "AllBlocksToolStripMenuItem2"
-        Me.AllBlocksToolStripMenuItem2.Size = New System.Drawing.Size(140, 22)
+        Me.AllBlocksToolStripMenuItem2.Size = New System.Drawing.Size(125, 22)
         Me.AllBlocksToolStripMenuItem2.Text = "All Blocks"
         '
         'ByTenderToolStripMenuItem1
         '
         Me.ByTenderToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegularToolStripMenuItem1, Me.ExtendedToolStripMenuItem1})
         Me.ByTenderToolStripMenuItem1.Name = "ByTenderToolStripMenuItem1"
-        Me.ByTenderToolStripMenuItem1.Size = New System.Drawing.Size(140, 22)
+        Me.ByTenderToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
         Me.ByTenderToolStripMenuItem1.Text = "ByTender"
         '
         'RegularToolStripMenuItem1
         '
         Me.RegularToolStripMenuItem1.Name = "RegularToolStripMenuItem1"
-        Me.RegularToolStripMenuItem1.Size = New System.Drawing.Size(137, 22)
+        Me.RegularToolStripMenuItem1.Size = New System.Drawing.Size(122, 22)
         Me.RegularToolStripMenuItem1.Text = "Regular"
         '
         'ExtendedToolStripMenuItem1
         '
         Me.ExtendedToolStripMenuItem1.Name = "ExtendedToolStripMenuItem1"
-        Me.ExtendedToolStripMenuItem1.Size = New System.Drawing.Size(137, 22)
+        Me.ExtendedToolStripMenuItem1.Size = New System.Drawing.Size(122, 22)
         Me.ExtendedToolStripMenuItem1.Text = "Extended"
         '
         'GrpBomView
@@ -478,9 +478,9 @@ Partial Class UC_BomList
         Me.GrpBomView.Controls.Add(Me.BtnOpenBomXls)
         Me.GrpBomView.Controls.Add(Me.LstBom)
         Me.GrpBomView.Location = New System.Drawing.Point(0, 0)
-        Me.GrpBomView.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GrpBomView.Margin = New System.Windows.Forms.Padding(2)
         Me.GrpBomView.Name = "GrpBomView"
-        Me.GrpBomView.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GrpBomView.Padding = New System.Windows.Forms.Padding(2)
         Me.GrpBomView.Size = New System.Drawing.Size(137, 145)
         Me.GrpBomView.TabIndex = 0
         Me.GrpBomView.TabStop = False
@@ -491,7 +491,7 @@ Partial Class UC_BomList
         '
         Me.BtnInsertBomXls.Image = Global.Nachshon.My.Resources.Resources.Plus2
         Me.BtnInsertBomXls.Location = New System.Drawing.Point(4, 119)
-        Me.BtnInsertBomXls.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnInsertBomXls.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnInsertBomXls.Name = "BtnInsertBomXls"
         Me.BtnInsertBomXls.Size = New System.Drawing.Size(24, 24)
         Me.BtnInsertBomXls.TabIndex = 14
@@ -501,7 +501,7 @@ Partial Class UC_BomList
         '
         Me.BtnOpenBomXls.Image = Global.Nachshon.My.Resources.Resources.OPEN
         Me.BtnOpenBomXls.Location = New System.Drawing.Point(108, 119)
-        Me.BtnOpenBomXls.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnOpenBomXls.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnOpenBomXls.Name = "BtnOpenBomXls"
         Me.BtnOpenBomXls.Size = New System.Drawing.Size(24, 24)
         Me.BtnOpenBomXls.TabIndex = 13
@@ -511,7 +511,7 @@ Partial Class UC_BomList
         '
         Me.LstBom.FormattingEnabled = True
         Me.LstBom.Location = New System.Drawing.Point(5, 19)
-        Me.LstBom.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.LstBom.Margin = New System.Windows.Forms.Padding(2)
         Me.LstBom.Name = "LstBom"
         Me.LstBom.Size = New System.Drawing.Size(124, 95)
         Me.LstBom.TabIndex = 12
@@ -526,9 +526,9 @@ Partial Class UC_BomList
         Me.TpgLists.Controls.Add(Me.btnCancel)
         Me.TpgLists.Controls.Add(Me.grpLstview)
         Me.TpgLists.Location = New System.Drawing.Point(4, 22)
-        Me.TpgLists.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TpgLists.Margin = New System.Windows.Forms.Padding(2)
         Me.TpgLists.Name = "TpgLists"
-        Me.TpgLists.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TpgLists.Padding = New System.Windows.Forms.Padding(2)
         Me.TpgLists.Size = New System.Drawing.Size(135, 198)
         Me.TpgLists.TabIndex = 0
         Me.TpgLists.Text = "List"
@@ -538,7 +538,7 @@ Partial Class UC_BomList
         '
         Me.BtnListView.Image = CType(resources.GetObject("BtnListView.Image"), System.Drawing.Image)
         Me.BtnListView.Location = New System.Drawing.Point(111, 175)
-        Me.BtnListView.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnListView.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnListView.Name = "BtnListView"
         Me.BtnListView.Size = New System.Drawing.Size(24, 25)
         Me.BtnListView.TabIndex = 33
@@ -550,7 +550,7 @@ Partial Class UC_BomList
         Me.RadListHeb.AutoSize = True
         Me.RadListHeb.Checked = True
         Me.RadListHeb.Location = New System.Drawing.Point(44, 51)
-        Me.RadListHeb.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadListHeb.Margin = New System.Windows.Forms.Padding(2)
         Me.RadListHeb.Name = "RadListHeb"
         Me.RadListHeb.Size = New System.Drawing.Size(62, 17)
         Me.RadListHeb.TabIndex = 30
@@ -562,7 +562,7 @@ Partial Class UC_BomList
         '
         Me.BtnCrtList.Image = CType(resources.GetObject("BtnCrtList.Image"), System.Drawing.Image)
         Me.BtnCrtList.Location = New System.Drawing.Point(57, 176)
-        Me.BtnCrtList.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnCrtList.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnCrtList.Name = "BtnCrtList"
         Me.BtnCrtList.Size = New System.Drawing.Size(24, 24)
         Me.BtnCrtList.TabIndex = 32
@@ -573,7 +573,7 @@ Partial Class UC_BomList
         '
         Me.radListEng.AutoSize = True
         Me.radListEng.Location = New System.Drawing.Point(45, 29)
-        Me.radListEng.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.radListEng.Margin = New System.Windows.Forms.Padding(2)
         Me.radListEng.Name = "radListEng"
         Me.radListEng.Size = New System.Drawing.Size(59, 17)
         Me.radListEng.TabIndex = 31
@@ -585,7 +585,7 @@ Partial Class UC_BomList
         Me.CmbListypes.FormattingEnabled = True
         Me.CmbListypes.Items.AddRange(New Object() {"Wide ", "Narrow ", "Fixed", "Operational"})
         Me.CmbListypes.Location = New System.Drawing.Point(28, 5)
-        Me.CmbListypes.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CmbListypes.Margin = New System.Windows.Forms.Padding(2)
         Me.CmbListypes.Name = "CmbListypes"
         Me.CmbListypes.Size = New System.Drawing.Size(95, 21)
         Me.CmbListypes.TabIndex = 29
@@ -594,7 +594,7 @@ Partial Class UC_BomList
         '
         Me.btnCancel.Image = Global.Nachshon.My.Resources.Resources.back
         Me.btnCancel.Location = New System.Drawing.Point(4, 176)
-        Me.btnCancel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(23, 22)
         Me.btnCancel.TabIndex = 28
@@ -607,9 +607,9 @@ Partial Class UC_BomList
         Me.grpLstview.Controls.Add(Me.BtnOpenXls)
         Me.grpLstview.Controls.Add(Me.lstList)
         Me.grpLstview.Location = New System.Drawing.Point(2, 2)
-        Me.grpLstview.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.grpLstview.Margin = New System.Windows.Forms.Padding(2)
         Me.grpLstview.Name = "grpLstview"
-        Me.grpLstview.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.grpLstview.Padding = New System.Windows.Forms.Padding(2)
         Me.grpLstview.Size = New System.Drawing.Size(135, 165)
         Me.grpLstview.TabIndex = 27
         Me.grpLstview.TabStop = False
@@ -619,7 +619,7 @@ Partial Class UC_BomList
         '
         Me.BtnInsertXL.Image = Global.Nachshon.My.Resources.Resources.Plus2
         Me.BtnInsertXL.Location = New System.Drawing.Point(2, 139)
-        Me.BtnInsertXL.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnInsertXL.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnInsertXL.Name = "BtnInsertXL"
         Me.BtnInsertXL.Size = New System.Drawing.Size(24, 24)
         Me.BtnInsertXL.TabIndex = 14
@@ -630,7 +630,7 @@ Partial Class UC_BomList
         '
         Me.BtnOpenXls.Image = Global.Nachshon.My.Resources.Resources.OPEN
         Me.BtnOpenXls.Location = New System.Drawing.Point(106, 139)
-        Me.BtnOpenXls.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnOpenXls.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnOpenXls.Name = "BtnOpenXls"
         Me.BtnOpenXls.Size = New System.Drawing.Size(24, 24)
         Me.BtnOpenXls.TabIndex = 13
@@ -641,7 +641,7 @@ Partial Class UC_BomList
         '
         Me.lstList.FormattingEnabled = True
         Me.lstList.Location = New System.Drawing.Point(4, 16)
-        Me.lstList.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.lstList.Margin = New System.Windows.Forms.Padding(2)
         Me.lstList.Name = "lstList"
         Me.lstList.Size = New System.Drawing.Size(127, 121)
         Me.lstList.TabIndex = 12
@@ -651,7 +651,7 @@ Partial Class UC_BomList
         Me.TpgTender.Controls.Add(Me.GrpTndBom)
         Me.TpgTender.Controls.Add(Me.GrpTndView)
         Me.TpgTender.Location = New System.Drawing.Point(4, 22)
-        Me.TpgTender.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TpgTender.Margin = New System.Windows.Forms.Padding(2)
         Me.TpgTender.Name = "TpgTender"
         Me.TpgTender.Size = New System.Drawing.Size(135, 198)
         Me.TpgTender.TabIndex = 2
@@ -667,9 +667,9 @@ Partial Class UC_BomList
         Me.GrpTndBom.Controls.Add(Me.BtnCrtAllTender)
         Me.GrpTndBom.Controls.Add(Me.LstTndBom)
         Me.GrpTndBom.Location = New System.Drawing.Point(2, 2)
-        Me.GrpTndBom.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GrpTndBom.Margin = New System.Windows.Forms.Padding(2)
         Me.GrpTndBom.Name = "GrpTndBom"
-        Me.GrpTndBom.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GrpTndBom.Padding = New System.Windows.Forms.Padding(2)
         Me.GrpTndBom.Size = New System.Drawing.Size(135, 202)
         Me.GrpTndBom.TabIndex = 39
         Me.GrpTndBom.TabStop = False
@@ -680,7 +680,7 @@ Partial Class UC_BomList
         Me.RadHebTnd.AutoSize = True
         Me.RadHebTnd.Checked = True
         Me.RadHebTnd.Location = New System.Drawing.Point(69, 142)
-        Me.RadHebTnd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadHebTnd.Margin = New System.Windows.Forms.Padding(2)
         Me.RadHebTnd.Name = "RadHebTnd"
         Me.RadHebTnd.Size = New System.Drawing.Size(62, 17)
         Me.RadHebTnd.TabIndex = 40
@@ -692,7 +692,7 @@ Partial Class UC_BomList
         '
         Me.RadEngTnd.AutoSize = True
         Me.RadEngTnd.Location = New System.Drawing.Point(5, 142)
-        Me.RadEngTnd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadEngTnd.Margin = New System.Windows.Forms.Padding(2)
         Me.RadEngTnd.Name = "RadEngTnd"
         Me.RadEngTnd.Size = New System.Drawing.Size(59, 17)
         Me.RadEngTnd.TabIndex = 41
@@ -703,7 +703,7 @@ Partial Class UC_BomList
         '
         Me.BtnCrtSelTnd.Image = Global.Nachshon.My.Resources.Resources.Tender1
         Me.BtnCrtSelTnd.Location = New System.Drawing.Point(55, 165)
-        Me.BtnCrtSelTnd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnCrtSelTnd.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnCrtSelTnd.Name = "BtnCrtSelTnd"
         Me.BtnCrtSelTnd.Size = New System.Drawing.Size(20, 22)
         Me.BtnCrtSelTnd.TabIndex = 38
@@ -714,7 +714,7 @@ Partial Class UC_BomList
         '
         Me.BtnCloseTndBom.Image = Global.Nachshon.My.Resources.Resources.back
         Me.BtnCloseTndBom.Location = New System.Drawing.Point(5, 165)
-        Me.BtnCloseTndBom.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnCloseTndBom.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnCloseTndBom.Name = "BtnCloseTndBom"
         Me.BtnCloseTndBom.Size = New System.Drawing.Size(23, 22)
         Me.BtnCloseTndBom.TabIndex = 39
@@ -726,7 +726,7 @@ Partial Class UC_BomList
         Me.BtnCrtAllTender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BtnCrtAllTender.Image = Global.Nachshon.My.Resources.Resources.TwoDocs
         Me.BtnCrtAllTender.Location = New System.Drawing.Point(105, 165)
-        Me.BtnCrtAllTender.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnCrtAllTender.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnCrtAllTender.Name = "BtnCrtAllTender"
         Me.BtnCrtAllTender.Size = New System.Drawing.Size(20, 22)
         Me.BtnCrtAllTender.TabIndex = 0
@@ -737,7 +737,7 @@ Partial Class UC_BomList
         '
         Me.LstTndBom.FormattingEnabled = True
         Me.LstTndBom.Location = New System.Drawing.Point(5, 17)
-        Me.LstTndBom.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.LstTndBom.Margin = New System.Windows.Forms.Padding(2)
         Me.LstTndBom.Name = "LstTndBom"
         Me.LstTndBom.Size = New System.Drawing.Size(120, 121)
         Me.LstTndBom.TabIndex = 14
@@ -749,9 +749,9 @@ Partial Class UC_BomList
         Me.GrpTndView.Controls.Add(Me.BtnOpenTender)
         Me.GrpTndView.Controls.Add(Me.LstTnd)
         Me.GrpTndView.Location = New System.Drawing.Point(2, 2)
-        Me.GrpTndView.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GrpTndView.Margin = New System.Windows.Forms.Padding(2)
         Me.GrpTndView.Name = "GrpTndView"
-        Me.GrpTndView.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GrpTndView.Padding = New System.Windows.Forms.Padding(2)
         Me.GrpTndView.Size = New System.Drawing.Size(133, 202)
         Me.GrpTndView.TabIndex = 29
         Me.GrpTndView.TabStop = False
@@ -762,7 +762,7 @@ Partial Class UC_BomList
         '
         Me.BtnTenderBack.Image = Global.Nachshon.My.Resources.Resources.back
         Me.BtnTenderBack.Location = New System.Drawing.Point(6, 169)
-        Me.BtnTenderBack.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnTenderBack.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnTenderBack.Name = "BtnTenderBack"
         Me.BtnTenderBack.Size = New System.Drawing.Size(23, 22)
         Me.BtnTenderBack.TabIndex = 37
@@ -773,7 +773,7 @@ Partial Class UC_BomList
         '
         Me.BtnCrtTndView.Image = Global.Nachshon.My.Resources.Resources.bom
         Me.BtnCrtTndView.Location = New System.Drawing.Point(55, 168)
-        Me.BtnCrtTndView.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnCrtTndView.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnCrtTndView.Name = "BtnCrtTndView"
         Me.BtnCrtTndView.Size = New System.Drawing.Size(23, 24)
         Me.BtnCrtTndView.TabIndex = 14
@@ -784,7 +784,7 @@ Partial Class UC_BomList
         '
         Me.BtnOpenTender.Image = Global.Nachshon.My.Resources.Resources.OPEN
         Me.BtnOpenTender.Location = New System.Drawing.Point(103, 167)
-        Me.BtnOpenTender.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnOpenTender.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnOpenTender.Name = "BtnOpenTender"
         Me.BtnOpenTender.Size = New System.Drawing.Size(24, 24)
         Me.BtnOpenTender.TabIndex = 13
@@ -795,7 +795,7 @@ Partial Class UC_BomList
         '
         Me.LstTnd.FormattingEnabled = True
         Me.LstTnd.Location = New System.Drawing.Point(6, 17)
-        Me.LstTnd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.LstTnd.Margin = New System.Windows.Forms.Padding(2)
         Me.LstTnd.Name = "LstTnd"
         Me.LstTnd.Size = New System.Drawing.Size(122, 147)
         Me.LstTnd.TabIndex = 0
@@ -804,7 +804,7 @@ Partial Class UC_BomList
         '
         Me.ProgBar.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ProgBar.Location = New System.Drawing.Point(2, 226)
-        Me.ProgBar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ProgBar.Margin = New System.Windows.Forms.Padding(2)
         Me.ProgBar.Name = "ProgBar"
         Me.ProgBar.Size = New System.Drawing.Size(141, 10)
         Me.ProgBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous
@@ -820,26 +820,26 @@ Partial Class UC_BomList
         'AllBlocksToolStripMenuItem
         '
         Me.AllBlocksToolStripMenuItem.Name = "AllBlocksToolStripMenuItem"
-        Me.AllBlocksToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
+        Me.AllBlocksToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.AllBlocksToolStripMenuItem.Text = "All Blocks"
         '
         'ByTenderToolStripMenuItem
         '
         Me.ByTenderToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegularToolStripMenuItem, Me.ExtendedToolStripMenuItem})
         Me.ByTenderToolStripMenuItem.Name = "ByTenderToolStripMenuItem"
-        Me.ByTenderToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
+        Me.ByTenderToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.ByTenderToolStripMenuItem.Text = "ByTender"
         '
         'RegularToolStripMenuItem
         '
         Me.RegularToolStripMenuItem.Name = "RegularToolStripMenuItem"
-        Me.RegularToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.RegularToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
         Me.RegularToolStripMenuItem.Text = "Regular"
         '
         'ExtendedToolStripMenuItem
         '
         Me.ExtendedToolStripMenuItem.Name = "ExtendedToolStripMenuItem"
-        Me.ExtendedToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.ExtendedToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
         Me.ExtendedToolStripMenuItem.Text = "Extended"
         '
         'UC_BomList
@@ -848,7 +848,7 @@ Partial Class UC_BomList
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.ProgBar)
         Me.Controls.Add(Me.TabReports)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "UC_BomList"
         Me.Size = New System.Drawing.Size(146, 240)
         Me.TabReports.ResumeLayout(False)
@@ -908,7 +908,7 @@ Partial Class UC_BomList
     Friend WithEvents ChkCoolRoom As System.Windows.Forms.CheckBox
     Friend WithEvents ChkShelf As System.Windows.Forms.CheckBox
     Friend WithEvents ChkCeiling As System.Windows.Forms.CheckBox
-    Friend WithEvents ChkWeight As System.Windows.Forms.CheckBox
+    Friend WithEvents ChkDoors As System.Windows.Forms.CheckBox
     Friend WithEvents ChkBake As System.Windows.Forms.CheckBox
     Friend WithEvents ChkSink As System.Windows.Forms.CheckBox
     Friend WithEvents ChkNotIn As System.Windows.Forms.CheckBox
